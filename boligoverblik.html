@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Lunde by | Bolig til salg</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/lunde.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta name="description" content="Velkommen til Lunde by! Lunde by er en lille by i Varde Kommune med store grønne områder, billige boliger og plads til børnefamilier.">
+        <meta name="keywords" content="Lunde by, billige huse, familiehus, børnefamilier">
+  <script src="js/boligoverblik.js" defer></script>
+</head>
+
+<body>
+            <nav class="topnav" id="myTopnav" onclick="">
+            <a href="index.html">
+                <img src="images/logo2.png" class="logo" alt="lundebylogo">
+            </a>
+            <img src="images/search.png" class="searchikonnav" alt="søgeikon" onclick="on()">
+            
+            <div id="searchoverlay">
+                <nav class="topnav" id="myTopnav" onclick="">
+            <a href="index.html">
+                <img src="images/logo2.png" class="logo" alt="lundebylogo">
+            </a>
+                <img src="images/search.png" class="searchikonnav" alt="søgeikon" onclick="off()">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img src="images/burgermenu-01.png" class="burgericon" alt="burgermenu">
+            </a>
+            <a href="index.html" id="indholdnav" class="link">Forside</a>
+            <a href="omlunde.html" class="link">Om Lunde</a>
+            <a href="#" class="link">Faciliteter</a>
+           <a href="boligoverblik.html" class="link" id="activenav">Boligoverblik</a>
+            <a href="nav.html" class="link" id="navnederst">Kalender</a>
+            
+        </nav>
+                    
+                    <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Hvad leder du efter?" title="Type in a name">
+
+                    <ul id="searchUL">
+                        <li><a href="boligoverblik.html">Ledige boliger</a></li>
+                        <li><a href="#faciliteter">Skole</a></li>
+                        <li><a href="omlunde.html">Om Lunde</a></li>
+                        <li><a href="nav.html">Kalender og begivenheder</a></li>
+                        <li><a href="#footer">Kontakt</a></li>
+                        <li><a href="#faciliteter">Grønne områder</a></li>
+                        <li><a href="#faciliteter">Naboskab</a></li>
+                        <li><a href="https://www.facebook.com/Lunde.Varde/?__tn__=%2Cd%2CP-R&eid=ARCrOHW7Eux5xIRzVEm3B2k76dDJ5WW1duE8zG6sQu2re5ZB3KzNIndOpNkCyc51s8KRZ2D9pzYnklOp" target="_blank">Facebook</a></li>
+                    </ul>
+            </div>
+        
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img src="images/burgermenu-01.png" class="burgericon" alt="burgermenu">
+            </a>
+        
+            <a href="index.html" id="indholdnav" class="link">Forside</a>
+            <a href="omlunde.html" class="link">Om Lunde</a>
+            <a href="#" class="link" >Faciliteter</a>
+            <a href="boligoverblik.html" class="link" id="activenav">Boligoverblik</a>
+            <a href="nav.html" class="link" id="navnederst">Kalender</a>
+            
+            
+        </nav>
+
+<main>
+<div class="sidefilter">
+            <div class="filterbox" id="filterboxfirst">
+      <h3 class="h3filter">Ejendomstype</h3><p class="pfilter">Villa, Lejlighed, Familievenlig ejendom, Tæt på grønne områder</p></div>
+      <div class="filterbox"><h3 class="h3filter">Pris</h3>
+         <div class="slidecontainer">
+             <p id="pmin">0kr</p><p id="pmax">5 mio kr</p>
+             <input type="range" min="1" max="5000000" value="2500000" class="slider" id="myRange">
+            <p class="pvalue">Op til: <span id="demo"></span></p>
+          </div>
+      </div>
+      <div class="filterbox" id="filterboxlast">
+          <h3 class="h3filter">Antal værelser</h3>
+            <input type="checkbox" class="filtercheck" name="room1" value="1 værelse"> 1 værelse<br>
+            <input type="checkbox" class="filtercheck" name="room2" value="3 værelser"> 2 værelser<br>
+            <input type="checkbox" class="filtercheck" name="room3" value="3 værelser" checked> 3 værelser<br>
+      </div>
+      <div class="merebtn" id="nulstilbtn"><h4>Nulstil søgning</h4></div>
+      <a href="boligoverblik.html">
+          <btn class="merebtn" id="filterbtn3">Søg bolig</btn></a>
+        </div>    
+    <button class="merebtn" id="filterbtn"><img src="images/filterikon.png" alt="filter ikon"><h4>Filtrer din søgning</h4></button>
+
+<!-- The Modal -->
+<div id="boligmodal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-contentbolig">
+    <span class="close">&times;</span>
+      <div class="filterbox" id="filterboxfirst2">
+      <h3 class="h3filter">Ejendomstype</h3><p class="pfilter">Villa, Lejlighed, Familievenlig ejendom, Tæt på grønne områder</p></div>
+      <div class="filterbox"><h3 class="h3filter">Pris</h3>
+         <div class="slidecontainer">
+             <p id="pmin2">0kr</p><p id="pmax2">5 mio kr</p>
+             <input type="range" min="1" max="5000000" value="2500000" class="slider" id="myRange">
+          </div>
+      </div>
+      <div class="filterbox" id="filterboxlast2">
+          <h3 class="h3filter">Antal værelser</h3>
+            <input type="checkbox" class="filtercheck" name="room1" value="1 værelse"> 1 værelse<br>
+            <input type="checkbox" class="filtercheck" name="room2" value="3 værelser"> 2 værelser<br>
+            <input type="checkbox" class="filtercheck" name="room3" value="3 værelser" checked> 3 værelser<br>
+      </div>
+      <div class="merebtn" id="nulstilbtn2"><h4>Nulstil søgning</h4></div>
+      <a href="boligoverblik.html">
+          <btn class="merebtn" id="filterbtn3">Søg bolig</btn></a>
+  </div>
+
+</div>
+    
+<!-- Kasse 1 -->
+    <div class="first" id="boligfirst">
+    <div class="second" id="boligimg1"></div>
+      <div class="third"><h4>125 km²</h4></div>
+        <div class="fourth"><h4>4 rum</h4></div>
+          <div class="five"><h4>Energi B</h4></div>
+            <div class="six"><h4>1.032.164 kr.</h4></div>
+                <div class="seven"><h3 class="h3bolig">Skøn andelsbolig beliggende i særdeles børnevenligt kvarter</h3><p class="pbolig">Skøn andelsbolig beliggende på en stille og rolig vej i et særdeles børnevenligt kvarter, hvor der er kort afstand til alle hverdagens fornødenheder. Boligen er holdt i pæn stand og byder på en god planløsning og flot energimærke. Boligen indeholder: En rigtig fin og indbydende entré med plads til overtøjet...</p></div>
+                    <div class="eight"><h4>Se bolig hos mægler</h4></div>
+  </div>
+    
+<!-- Kasse 2 -->
+    <div class="first" id="boligsidste">
+    <div class="second" id="boligimg2"></div>
+      <div class="third"><h4>192 km²</h4></div>
+        <div class="fourth"><h4>7/4 rum</h4></div>
+          <div class="five"><h4>Energi C</h4></div>
+            <div class="six"><h4>1.200.000 kr.</h4></div>
+                <div class="seven"><h3 class="h3bolig">Stor garage og muligheder for den kreative - plads til flere generationer</h3><p class="pbolig">Omkranset af grønne marker ligger denne store bolig. Boligen rummer 192 m2. Boligen byder på 2 badeværelser, rummeligt køkken, 2 stuer, 5 værelser samt kontor fordelt på stueetage samt 1. sal. Der er med andre ord plads til den store familie eller flere generationer.</p></div>
+                    <div class="eight"><h4>Se bolig hos mægler</h4></div>
+  </div>
+    
+        </main>
+    
+                <footer>
+            <div class="column1">
+                <a href="mailto:piasechernews@gmail.com">
+                    <img src="images/mailikon.png" alt="mail" id="mailikonfoot">
+                    <p class="hvidp">
+                    Send nyheder og info til Pia Secher
+                    </p>
+                </a>
+            </div>
+            <div class="column2">
+                <img src="images/mapikon.png" alt="map" id="mapikonfoot">
+                <p class="hvidp">
+                6800 Nr. Nebel - Lunde By
+                </p>
+            </div>
+            <div class="column3">
+                <a href="https://www.facebook.com/Lunde.Varde/?__tn__=%2Cd%2CP-R&eid=ARCrOHW7Eux5xIRzVEm3B2k76dDJ5WW1duE8zG6sQu2re5ZB3KzNIndOpNkCyc51s8KRZ2D9pzYnklOp" target="_blank">
+                    <img src="images/facebookikon.png" class="facebookikon" alt="facebookikon" id="fbikonfoot">
+                    <p class="hvidp">
+                    Følg os på Facebook
+                    </p>
+                </a>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

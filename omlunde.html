@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lunde by | Om Lunde</title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/lunde.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <meta name="description" content="Velkommen til Lunde by! Lunde by er en lille by i Varde Kommune med store grønne områder, billige boliger og plads til børnefamilier.">
+        <meta name="keywords" content="Lunde by, billige huse, familiehus, børnefamilier">
+        <script src="js/lunde.js" defer></script>
+    </head>
+    
+    <body>
+         <nav class="topnav" id="myTopnav">
+            <a href="index.html">
+                <img src="images/logo2.png" class="logo" alt="lundebylogo">
+            </a>
+            <img src="images/search.png" class="searchikonnav" alt="søgeikon" onclick="on()">
+            <div id="searchoverlay">
+                
+                <nav class="topnav" id="myTopnav" onclick="off()">
+                    <a href="index.html">
+                    <img src="images/logo2.png" class="logo" alt="lundebylogo">
+                    </a>
+                    <img src="images/search.png" class="searchikonnav" alt="søgeikon">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img alt="burgermenu" src="images/burgermenu-01.png" class="burgericon">
+                    </a>
+                    <a href="index.html" id="indholdnav" class="link">Forside</a>
+                    <a href="omlunde.html" class="link" id="activenav">Om Lunde</a>
+                    <a href="#" class="link" >Faciliteter</a>
+                    <a href="boligoverblik.html" class="link">Boligoverblik</a>
+                    <a href="nav.html" class="link" id="navnederst">Kalender</a>
+                </nav>
+                
+                    <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Hvad leder du efter?" title="Type in a name">
+
+                    <ul id="searchUL">
+                        <li><a href="boligoverblik.html">Ledige boliger</a></li>
+                        <li><a href="#faciliteter">Skole</a></li>
+                        <li><a href="omlunde.html">Om Lunde</a></li>
+                        <li><a href="nav.html">Kalender og begivenheder</a></li>
+                        <li><a href="#footer">Kontakt</a></li>
+                        <li><a href="#faciliteter">Grønne områder</a></li>
+                        <li><a href="#faciliteter">Naboskab</a></li>
+                        <li><a href="https://www.facebook.com/Lunde.Varde/?__tn__=%2Cd%2CP-R&eid=ARCrOHW7Eux5xIRzVEm3B2k76dDJ5WW1duE8zG6sQu2re5ZB3KzNIndOpNkCyc51s8KRZ2D9pzYnklOp" target="_blank">Facebook</a></li>
+                    </ul>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img alt="burgermenu" src="images/burgermenu-01.png" class="burgericon">
+            </a>
+            <a href="index.html" id="indholdnav" class="link">Forside</a>
+            <a href="omlunde.html" class="link" id="activenav">Om Lunde</a>
+             <a href="#" class="link" >Faciliteter</a>
+            <a href="boligoverblik.html" class="link">Boligoverblik</a>
+            <a href="nav.html" class="link" id="navnederst">Kalender</a>
+            
+            
+        </nav>
+        
+        <main>
+           <br> 
+            <div class="tekstboks"> 
+                <h1 class="omlundeoverskrift">Om Lunde</h1>
+                    <iframe id="videolunde" src="https://www.youtube.com/embed/LbL0z5IeEjQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>
+                           Velkommen til vores hjemmeside om Lunde by. Vi er en lille by i Nr- Nebel i Vestjylland, her bor vi 449 beboerer, og vi er stolte af vores lille samfund. I Lunde går vi op i at alle har det godt, og at fællesskab er en prioritet for alle. Vi hjælper hinanden og sørger for at vores by forbliver så hyggelig som den er i dag! Vi har lavet en video over byens hyggelige områder, og de rolige familier miljøer. I videoen her kan du se lidt mere om lunde og alle de fantastiske områder vi har. Herunder skolen, det grønne område og kroen. I videoen bliver du præsenteret for nogle borgere som fortæller omkring hvordan det er at bo i Lunde, samt deres forhold til  byen. I Lunde er der stor opbakning til de forskellige arrangementer der bliver afholdt, både af kroen, skolen og af fælles arbejdsdage  med henblik på at forskønne byen. I lunde træder naboerne til hvis man har brug for en ekstra hånd, og hjælpen er altid nær. I videoen vil du blive præsenteret for nogle af byens ilsjæle, og for noget af det arbejde de gør for at holde byen gang i byen.   
+                        </p>
+            </div>
+                 
+        <br>
+                  
+            <div class="tekstboks1"> 
+                <h1 class="omlundeoverskrift">En by med sammenhold! </h1> 
+                        <p id="omlundepbottom">
+                            I Lunde Sker der mange ting, og en af de ting der bliver gjort meget i, i det lille samfund, er samarbejde omkring byen. Vi arbejder meget på at fornye byen og holde den vedlige, dette gør stedet attraktivt og gør at alle føler sig velkommen i vores lille samfund. Ved hjælp af beboernes hjælpsomhed, arbejder vi med at gøre vores grønneområde atraktivt for de helt små, teenagerne samt de voksne. Vi har plantet frugttræer som beboerne frit kan benytte sig af, vi har bygget en bålhytte, hvor man kan komme og grille i de skønne omgivelser. Næste skridt i planen er at få etableret tre skønne sheltere ved siden af bål pladsen, hvor alle kan komme og nyde godt af det skønne område. Shelterne skal være offentlige og florere på Shelter.dk, som kan trække torister til byen. Lunde er en aktiv by, hvor alle er en del af samfundet og går op i at have gode relationer til hindenden. 
+                        </p>  
+                <img class="sammenhold" alt="Friviligtarbejde" src="images/Friviligtarbejde.png">
+                    <br>
+            </div>
+            
+        </main>
+        
+        <div class="colorboks">
+            <div class="lundesudvikling">
+                <br> Lundes udvikling <br> <br>
+                <img alt="Lundestation" src="images/Lundestation.png" id="lundestimg">
+            </div>
+        </div>
+        
+        <footer>
+           <div class="column1">
+                <a href="mailto:piasechernews@gmail.com">
+                    <img src="images/mailikon.png" alt="mail" id="mailikonfoot">
+                    <p class="hvidp">
+                    Send nyheder og info til Pia Secher
+                    </p>
+                </a>
+            </div>
+            <div class="column2">
+                <img src="images/mapikon.png" alt="map" id="mapikonfoot">
+                <p class="hvidp">
+                6800 Nr. Nebel - Lunde By
+                </p>
+            </div>
+            <div class="column3">
+                <a href="https://www.facebook.com/Lunde.Varde/?__tn__=%2Cd%2CP-R&eid=ARCrOHW7Eux5xIRzVEm3B2k76dDJ5WW1duE8zG6sQu2re5ZB3KzNIndOpNkCyc51s8KRZ2D9pzYnklOp" target="_blank">
+                    <img src="images/facebookikon.png" class="facebookikon" alt="facebookikon" id="fbikonfoot">
+                    <p class="hvidp">
+                    Følg os på Facebook
+                    </p>
+                </a>
+            </div>
+        </footer>
+    </body>
+
+</html>

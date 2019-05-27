@@ -1,0 +1,156 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title> Lunde by | Forside
+        </title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/lunde.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <script src="js/index.js" defer></script>
+        <meta name="description" content="Velkommen til Lunde by! Lunde by er en lille by i Varde Kommune med store grønne områder, billige boliger og plads til børnefamilier.">
+        <meta name="keywords" content="Lunde by, billige huse, familiehus, børnefamilier">
+    </head>
+    
+    <body>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html">
+                <img src="images/logo2.png" class="logo" alt="lundebylogo">
+            </a>
+            <img src="images/search.png" class="searchikonnav" alt="søgeikon" onclick="on()">
+            
+            <div id="searchoverlay">
+                <nav class="topnav" id="myTopnav" onclick="off()">
+                <a href="index.html">
+                <img src="images/logo2.png" class="logo" alt="lundebylogo">
+                </a>
+            <img src="images/search.png" class="searchikonnav" alt="søgeikon">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="images/burgermenu-01.png" class="burgericon" alt="burgermenu">
+            </a>
+            <a href="index.html" id="activeforside" class="link">Forside</a>
+            <a href="omlunde.html" class="link">Om Lunde</a>
+            <a href="#" class="link" >Faciliteter</a>
+            <a href="boligoverblik.html" class="link">Boligoverblik</a>
+            <a href="nav.html" class="link" id="navnederst">Kalender</a>
+            </nav>   
+                
+                <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Hvad leder du efter?" title="Type your search">
+                <ul id="searchUL">
+                        <li><a href="boligoverblik.html">Ledige boliger</a></li>
+                        <li><a href="#faciliteter">Skole</a></li>
+                        <li><a href="omlunde.html">Om Lunde</a></li>
+                        <li><a href="nav.html">Kalender og begivenheder</a></li>
+                        <li><a href="#footer">Kontakt</a></li>
+                        <li><a href="#faciliteter">Grønne områder</a></li>
+                        <li><a href="#faciliteter">Naboskab</a></li>
+                        <li><a href="https://www.facebook.com/Lunde.Varde/?__tn__=%2Cd%2CP-R&eid=ARCrOHW7Eux5xIRzVEm3B2k76dDJ5WW1duE8zG6sQu2re5ZB3KzNIndOpNkCyc51s8KRZ2D9pzYnklOp" target="_blank">Facebook</a></li>
+                    </ul>
+            </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="images/burgermenu-01.png" class="burgericon" alt="burgermenu">
+            </a>
+        <a href="index.html" id="activeforside" class="link">Forside</a>
+        <a href="omlunde.html" class="link">Om Lunde</a>
+        <a href="#" class="link" >Faciliteter</a>
+        <a href="boligoverblik.html" class="link">Boligoverblik</a>
+        <a href="nav.html" class="link" id="navnederst">Kalender</a>
+        </nav>   
+        
+        <section class="slideshow">
+            <div class="slidesForside">
+                <div class="mySlides fade">
+                    <a href="#" class="link">
+                        <img src="images/boligsalg.png" class="slideImages" alt="boligSalg">
+                        <div class="textboxForside">   
+                            <h2 class="h2Forside">SØGER DU EFTER BOLIG?</h2>
+                            <p class="textForside">Køb en grund i Lunde fra 100.000kr i naturrige omgivelser med højt til loftet</p>
+                        </div>
+                    </a>
+                </div>
+            <div class="mySlides fade">
+                <a href="#" class="link">
+                    <img src="images/nytboerneunivers.png" class="slideImages" alt="NytBørneunivers">
+                    <div class="textboxForside">
+                        <h2 class="h2Forside">ET NYT BØRNEUNIVERS </h2>
+                        <p class="textForside">Besøg Blåbjerg Børneunivers <br>Et sted med plads til leg og læring </p>
+                    </div>
+                </a>
+            </div>
+            <div class="mySlides fade">
+            <a href="#" class="link">
+                <img src="images/grontomraade.png" class="slideImages" alt="SkønNatur">
+                <div class="textboxForside">
+                    <h2 class="h2Forside">EN BY MED SKØN NATUR</h2> 
+                    <p class="textForside">Inviter familie og venner på grill ved det nye grønne område.
+                </div>
+            </a>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+        
+        <main>
+            <div class="qouteForside">
+                <p class="quote"><i>"Jeg trives herude, vi har så meget at byde på. 
+                    <br>Folk ved slet ikke hvad de går glip af!"</i></p>
+                <p class="quotewriter"><i>- Frits Anneberg, Sogneformand</i></p>
+            </div>
+
+            <div class="eventcont">
+                <div class="contimg-text">
+                    <img src="images/boerneunivers.png.jpeg" class="imgkal" alt="blåbjerg børneunivers">
+                    <div class="textevent"><h2 class="h2kal">Blåbjerg Børneunivers</h2></div>
+                </div>
+                <p class="pkal" id="pkaltop">Lunde Kvong skolen bliver lagt sammen med Lundparkens Børnehave, og bliver til Blåbjerg Børneunivers. Et univers der har dagstilbud...</p>
+                <btn class="merebtn">Læs mere</btn>
+            </div>
+
+            <div class="eventcont" id="eventcontmiddle">
+                <div class="contimg-text">
+                    <img src="images/naturomraade.png" class="imgkal" alt="det grønne område">
+                    <div class="textevent"><h2 class="h2kal">Grønne områder</h2></div>
+                </div>
+                <p class="pkal">Besøg det grønne område i Lunde, som byder på grill-område og frugtplantager. Der er også mulighed for en overnatning i de nye shelters... </p>
+                <btn class="merebtn">Læs mere</btn>
+            </div>
+
+            <div class="eventcont">
+                <div class="contimg-text">
+                    <img src="images/nabo.png.jpg" class="imgkal" alt="godt naboskab"> 
+                    <div class="textevent"><h2 class="h2kal">Godt naboskab</h2></div>
+                </div>
+                <p class="pkal">Et godt naboskab er med til at skabe trygge rammer for dig og dine børn. I Lunde hjælper vi hinanden, og deler gerne erfaringer og gode råd...</p>
+                <btn class="merebtn">Læs mere</btn>
+            </div>
+            <div class="whitespace" id="whitespaceNed"></div>
+        </main>
+        
+        <footer id="footerforside">
+            <div class="column1">
+                <a href="mailto:piasechernews@gmail.com">
+                    <img src="images/mailikon.png" alt="mail" id="mailikonfoot">
+                    <p class="hvidp">
+                    Send nyheder og info til Pia Secher
+                    </p>
+                </a>
+            </div>
+            <div class="column2">
+                <img src="images/mapikon.png" alt="map" id="mapikonfoot">
+                <p class="hvidp">
+                6800 Nr. Nebel - Lunde By
+                </p>
+            </div>
+            <div class="column3">
+                <a href="https://www.facebook.com/Lunde.Varde/?__tn__=%2Cd%2CP-R&eid=ARCrOHW7Eux5xIRzVEm3B2k76dDJ5WW1duE8zG6sQu2re5ZB3KzNIndOpNkCyc51s8KRZ2D9pzYnklOp" target="_blank">
+                    <img src="images/facebookikon.png" class="facebookikon" alt="facebookikon" id="fbikonfoot">
+                    <p class="hvidp">
+                    Følg os på Facebook
+                    </p>
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

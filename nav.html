@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Lunde by | Kalender</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/lunde.css">
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <meta name="description" content="Velkommen til Lunde by! Lunde by er en lille by i Varde Kommune med store grønne områder, billige boliger og plads til børnefamilier.">
+        <meta name="keywords" content="Lunde by, billige huse, familiehus, børnefamilier">
+        <script src="js/lunde.js" defer></script>
+    </head>
+    
+    <body>
+        <nav class="topnav" id="myTopnav" onclick="">
+            <a href="index.html">
+                <img src="images/logo2.png" class="logo" alt="lundebylogo">
+            </a>
+            <img src="images/search.png" class="searchikonnav" alt="søgeikon" onclick="on()">
+            
+            <div id="searchoverlay">
+                <nav class="topnav" id="myTopnav" onclick="">
+            <a href="index.html">
+                <img src="images/logo2.png" class="logo" alt="lundebylogo">
+            </a>
+                <img src="images/search.png" class="searchikonnav" alt="søgeikon" onclick="off()">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img src="images/burgermenu-01.png" class="burgericon" alt="burgermenu">
+            </a>
+            <a href="index.html" id="indholdnav" class="link">Forside</a>
+            <a href="omlunde.html" class="link">Om Lunde</a>
+            <a href="#" class="link">Faciliteter</a>
+            <a href="boligoverblik.html" class="link">Boligoverblik</a>
+            <a href="nav.html" class="link" id="activenavnederst">Kalender</a>
+            
+        </nav>
+                    
+                    <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Hvad leder du efter?" title="Type in a name">
+
+                    <ul id="searchUL">
+                        <li><a href="boligoverblik.html">Ledige boliger</a></li>
+                        <li><a href="#faciliteter">Skole</a></li>
+                        <li><a href="omlunde.html">Om Lunde</a></li>
+                        <li><a href="nav.html">Kalender og begivenheder</a></li>
+                        <li><a href="#footer">Kontakt</a></li>
+                        <li><a href="#faciliteter">Grønne områder</a></li>
+                        <li><a href="#faciliteter">Naboskab</a></li>
+                        <li><a href="https://www.facebook.com/Lunde.Varde/?__tn__=%2Cd%2CP-R&eid=ARCrOHW7Eux5xIRzVEm3B2k76dDJ5WW1duE8zG6sQu2re5ZB3KzNIndOpNkCyc51s8KRZ2D9pzYnklOp" target="_blank">Facebook</a></li>
+                    </ul>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img src="images/burgermenu-01.png" class="burgericon" alt="burgermenu">
+            </a>
+            <a href="index.html" id="indholdnav" class="link">Forside</a>
+            <a href="omlunde.html" class="link">Om Lunde</a>
+            <a href="#" class="link">Faciliteter</a>
+            <a href="boligoverblik.html" class="link">Boligoverblik</a>
+            <a href="nav.html" class="link" id="activenavnederst">Kalender</a>
+            
+        </nav>
+        
+        <main>
+            <h1 id="h1kal">Kalender</h1> 
+            <div class="textboxkal">
+                <p id="textboxkal">
+                    I Lunde har vi mange arrangementer i løbet af et helt år. Her er det muligt at få et lille overblik i vores fælleskalender.
+                    Det er også muligt at tilføje din egen begivenhed til kalenderen, hvis du mener resten af byen skal informeres om dette.
+                </p>
+            </div>
+            <div id="calendar-container">
+                <div class="month">
+                    <ul>
+                        <li class="foer">&#10094;</li>
+                        <li class="naeste">&#10095;</li>
+                        <li>Juni 2019</li>
+                    </ul>
+                </div>
+                
+                <ul class="ugedage">
+                    <li>Man</li>
+                    <li>Tir</li>
+                    <li>Ons</li>
+                    <li>Tor</li>
+                    <li>Fre</li>
+                    <li>Lør</li>
+                    <li>Søn</li>
+                </ul>
+<!-- Modal -->
+        <div id="Modalkal" class="modal">
+
+  <!-- Modal indhold -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                       <h3>Begivenheder i Lunde </h3>
+                        <p class="italic">Mandag d. 10. juni</p>
+                       <p class="bold">Fødselsdage:</p>
+                 <div class="fodselsdage">                         <p>
+                     <img class="flag" alt="flag" src="images/flag.png"> 
+                     Caroline Lund 29 år</p>
+                     <p>
+                     <img class="flag" alt="flag" src="images/flag.png"> Noah Nielsen 5 år</p>
+                     <p>  
+                     <img class="flag" alt="flag" src="images/flag.png"> Helle Christiansen 56 år
+                        </p> 
+                  </div>
+                        
+                        <p class="bold">Dagens aktiviteter i Lunde:</p>
+                    <div class="aktiviteter">
+                            <p>Fællesspisning i forsamlingshuset klokken 18.00</p>
+                        <p> Borgermøde i Lunde klokken 19.30 
+                        </p>
+                    </div>
+              </div>
+            </div>
+                
+                <ul class="dage">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li class="aktivevent" id="myBtn">10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                </ul>
+            </div>
+            <a href="#opretbegivenhed"><div class="addevent">+ Tilføj begivenhed</div></a>
+        
+            <div class="eventcont">
+                <div class="contimg-text">
+                    <img src="images/img1.png" class="imgkal"  alt="billede">
+                    <div class="textevent"><h2 class="h2kal">Koncert på kroen</h2></div>
+                </div>
+                <p class="pkal" id="pkaltop">Oplev et af Lundes lokale bands på Kroen d. 25. juni. Der vil være fest og glade dage!</p>
+                <btn class="merebtn">Læs mere</btn>
+            </div>
+
+        
+            <div class="eventcont" id="eventcontmiddle">
+                <div class="contimg-text">
+                    <img src="images/img4.png" class="imgkal"  alt="billede">
+                    <div class="textevent"><h2 class="h2kal">Naturhytter</h2></div>
+                </div>
+                <p class="pkal">Tag på naturophold i Lundes grønne område, hvor de nye shelters giver ly.</p>
+                <btn class="merebtn">Læs mere</btn>
+            </div>
+
+            
+            <div class="eventcont">
+                <div class="contimg-text">
+                    <img src="images/img5.png" class="imgkal"  alt="billede"> 
+                    <div class="textevent"><h2 class="h2kal">Gudstjeneste</h2></div>
+                </div>
+                <p class="pkal">Kom til gudstjeneste i Lunde Kirke. Gudstjeneste bliver afholdt hver søndag.</p>
+                <btn class="merebtn">Læs mere</btn>
+            </div>
+
+            
+        </main>
+        
+        <div class="formkal" id="opretbegivenhed">
+                <p id="formhead">OPRET DIN BEGIVENHED HER</p>
+                <form  class="formkal1">
+                    <p class="boldform">Lidt om dig...</p>
+                    *Navn:<br>
+                    <input type="text" name="firstandlastname" required placeholder="Jens Jensen">
+                    <br><br>
+                    *E-mail:<br>
+                    <input type="text" name="email" required placeholder="jens@jensen.dk">
+                    <br><br>
+                    Telefonnummer:
+                    <br>
+                    <input type="text" name="phonenumber" placeholder="44 44 44 44">
+                
+                </form>
+                <form class="formkal2">
+                    <p class="boldform">Dit event...</p>
+                    *Navn på begivenhed:
+                    <br>
+                    <input type="text" name="eventname" required placeholder="Grillaften">
+                    <br><br>
+                    *Begivenhedens dato og lokation:
+                    <br>
+                    <input type="text" name="eventplace" required placeholder="Det grønne område  d. 9. juni klokken 18.00">
+                    <br><br>
+                    *Kort beskrivelse af begivenhed:
+                    <br>
+                    <input type="text" name="eventdescr" required placeholder="Kom forbi til hygge på det grønne område hvor...">
+                    <br><br>
+                    <input type="submit" value="Indsend begivenhed" class="indsend">
+                </form>
+            </div>
+        
+        <footer>
+            <div class="column1">
+                <a href="mailto:piasechernews@gmail.com">
+                    <img src="images/mailikon.png" alt="mail" id="mailikonfoot">
+                    <p class="hvidp">
+                    Send nyheder og info til Pia Secher
+                    </p>
+                </a>
+            </div>
+            <div class="column2">
+                <img src="images/mapikon.png" alt="map" id="mapikonfoot">
+                <p class="hvidp">
+                6800 Nr. Nebel - Lunde By
+                </p>
+            </div>
+            <div class="column3">
+                <a href="https://www.facebook.com/Lunde.Varde/?__tn__=%2Cd%2CP-R&eid=ARCrOHW7Eux5xIRzVEm3B2k76dDJ5WW1duE8zG6sQu2re5ZB3KzNIndOpNkCyc51s8KRZ2D9pzYnklOp" target="_blank">
+                    <img src="images/facebookikon.png" class="facebookikon" alt="facebookikon" id="fbikonfoot">
+                    <p class="hvidp">
+                    Følg os på Facebook
+                    </p>
+                </a>
+            </div>
+        </footer>
+    </body>
+    
+</html>
