@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title> Lunde by | Forside
+        </title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/lunde.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <script src="js/index.js" defer></script>
+        <meta name="description" content="Velkommen til Lunde by! Lunde by er en lille by i Varde Kommune med store grønne områder, billige boliger og plads til børnefamilier.">
+        <meta name="keywords" content="Lunde by, billige huse, familiehus, børnefamilier">
+    </head>
+    
+    <body>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html">
+                <img src="images/logo2.png" class="logo" alt="lundebylogo">
+            </a>
+            <img src="images/search.png" class="searchikonnav" alt="søgeikon" onclick="on()">
+            
+            <div id="searchoverlay">
+                <nav class="topnav" id="myTopnav" onclick="off()">
+                <a href="index.html">
+                <img src="images/logo2.png" class="logo" alt="lundebylogo">
+                </a>
+            <img src="images/search.png" class="searchikonnav" alt="søgeikon">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="images/burgermenu-01.png" class="burgericon" alt="burgermenu">
+            </a>
+            <a href="index.html" id="indholdnav" class="link">Forside</a>
+            <a href="omlunde.html" class="link">Om Lunde</a>
+            <a href="#" class="link" id="activenav">Faciliteter</a>
+            <a href="boligoverblik.html" class="link">Boligoverblik</a>
+            <a href="nav.html" class="link" id="navnederst">Kalender</a>
+            </nav>   
+                
+                <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Hvad leder du efter?" title="Type your search">
+                <ul id="searchUL">
+                        <li><a href="boligoverblik.html">Ledige boliger</a></li>
+                        <li><a href="#faciliteter">Skole</a></li>
+                        <li><a href="omlunde.html">Om Lunde</a></li>
+                        <li><a href="nav.html">Kalender og begivenheder</a></li>
+                        <li><a href="#footer">Kontakt</a></li>
+                        <li><a href="#faciliteter">Grønne områder</a></li>
+                        <li><a href="#faciliteter">Naboskab</a></li>
+                        <li><a href="https://www.facebook.com/Lunde.Varde/?__tn__=%2Cd%2CP-R&eid=ARCrOHW7Eux5xIRzVEm3B2k76dDJ5WW1duE8zG6sQu2re5ZB3KzNIndOpNkCyc51s8KRZ2D9pzYnklOp" target="_blank">Facebook</a></li>
+                    </ul>
+            </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="images/burgermenu-01.png" class="burgericon" alt="burgermenu">
+            </a>
+        <a href="index.html" id="indholdnav" class="link">Forside</a>
+        <a href="omlunde.html" class="link">Om Lunde</a>
+        <a href="#" class="link" id="activenav">Faciliteter</a>
+        <a href="boligoverblik.html" class="link">Boligoverblik</a>
+        <a href="nav.html" class="link" id="navnederst">Kalender</a>
+        </nav>
+        
+        <main>
+            <section class="facilitetersections" id="skolesection">
+                <h1>Blåbjerg Skole</h1>
+            </section>
+            
+            <section class="facilitetersections" id="gronneomradersection">
+                <h1 id="gronneomraderfach1">Grønne områder</h1>
+            </section>
+            
+            <section class="facilitetersections" id="naboskabsection">
+                <h1>Godt naboskab</h1>
+            </section>
+            
+        </main>
+        
+                <footer id="footerforside">
+            <div class="column1">
+                <a href="mailto:piasechernews@gmail.com">
+                    <img src="images/mailikon.png" alt="mail" id="mailikonfoot">
+                    <p class="hvidp">
+                    Send nyheder og info til Pia Secher
+                    </p>
+                </a>
+            </div>
+            <div class="column2">
+                <img src="images/mapikon.png" alt="map" id="mapikonfoot">
+                <p class="hvidp">
+                6800 Nr. Nebel - Lunde By
+                </p>
+            </div>
+            <div class="column3">
+                <a href="https://www.facebook.com/Lunde.Varde/?__tn__=%2Cd%2CP-R&eid=ARCrOHW7Eux5xIRzVEm3B2k76dDJ5WW1duE8zG6sQu2re5ZB3KzNIndOpNkCyc51s8KRZ2D9pzYnklOp" target="_blank">
+                    <img src="images/facebookikon.png" class="facebookikon" alt="facebookikon" id="fbikonfoot">
+                    <p class="hvidp">
+                    Følg os på Facebook
+                    </p>
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
