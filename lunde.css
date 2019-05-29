@@ -540,6 +540,7 @@ footer {
 @media only screen and (min-width:601px) {
     footer {
         height:100px;
+        padding-top: 35px;
     }
 }
 
@@ -1071,17 +1072,17 @@ footer {
     position: absolute;
     top: 166px;
     width: 100%;
-    height: 95px;
+    height: 105px;
     text-align: center;
     background-color: #f3bf50;
     opacity: 0.95;
 }
-    
+
 @media screen and (min-width:601px) {
     .textboxForside {
         top: 0px;
         width: 37%;
-        height: 99.5%;
+        height: 99.1%;
         text-align: center;
         background-color: #f3bf50;
         opacity: 0.95;
@@ -1102,7 +1103,7 @@ footer {
    .textForside {
         text-align: center;
         font-size: 25px;
-        margin-top: 20px;
+        margin-top: 30px;
         line-height: 35px;
     }
 }
@@ -1115,10 +1116,54 @@ footer {
 @media screen and (min-width:601px) {
    .h2Forside {
         font-size: 55px;
-        margin-top: 150px;
+        margin-top: 160px;
         line-height: 50px;
     }
 }
+
+.btnForside {
+    display: none;
+    
+}
+@media screen and (min-width:601px) {
+    .btnForside {
+        display: block;
+        position: absolute;
+        top: 78%;
+        left: 37%;
+    }
+}
+
+#merebtnForside1 {
+    background-color: #254805;
+    color: #FFFFFF;
+    border: 1.2px solid #254805;
+}
+
+#merebtnForside1:hover {
+    border: 1.2px solid #FFFFFF;
+}
+
+#merebtnForside2 {
+    background-color: #254805;
+    color: #FFFFFF;
+    border: 1.2px solid #254805;
+}
+
+#merebtnForside2:hover {
+    border: 1.2px solid #FFFFFF;
+}
+
+#merebtnForside3 {
+    background-color: #254805;
+    color: #FFFFFF;
+    border: 1.2px solid #254805;
+
+}
+#merebtnForside3:hover {
+    border: 1.2px solid #FFFFFF;
+}
+
 
 .prev, .next {
     cursor: pointer;
@@ -1132,7 +1177,7 @@ footer {
 
 @media screen and (min-width:601px) {
    .prev, .next {
-        bottom: 40%;
+        bottom: 38%;
         padding: 15px;
         font-size: 50px;
     }
@@ -1169,7 +1214,6 @@ footer {
     line-height: 34px;
     margin-left: 20px;
     margin-right: 20px;
-    color: #254805;
 }
 
 @media screen and (min-width:601px) {
@@ -1179,7 +1223,6 @@ footer {
     line-height: 50px;
     margin-left: 20px;
     margin-right: 20px;
-    color: #254805;
 }
 }
 
@@ -1779,35 +1822,4 @@ footer {
         width:50%;
         float:left;
     }
-}
-
-/*FACILITETER SIDE */
-#skolesection {
-    margin-top:90px;
-}
-
-@media only screen and (min-width:601px) {
-   #skolesection {
-    margin-top:110px;
-    } 
-}
-.facilitetersections {
-    height: 600px;
-    padding: 10px;
-    padding-top: 20px;
-}
-
-@media only screen and (min-width:601px) {
-    .facilitetersections {
-        padding:30px;
-        padding-top: 40px;
-    }
-}
-
-#gronneomradersection {
-    background-color: #b3c179;
-}
-
-#gronneomraderfach1 {
-    text-align: right;
 }
