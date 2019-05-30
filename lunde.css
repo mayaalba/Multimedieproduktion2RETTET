@@ -1381,13 +1381,14 @@ footer {
     .first .eight {
          position: absolute;
          width: 50%;
-         height: 35px;
+         height: 30px;
          left: 50%;
-         top: 90%;
+         top: 91%;
          border-top: 1px solid #254805;
          border-left: 1px solid #254805;
          background-color: #254805;
          color: #ffffff;
+         cursor: pointer;
 }
 
 @media screen and (min-width:601px) {
@@ -1403,9 +1404,17 @@ footer {
          color: #ffffff;
     }
 }
+
+@media screen and (min-width:601px) {
+        .eight h4 {
+         margin: 5px auto;
+    }
+}
+    
     
 .h3bolig {
     margin: 1px;
+    margin-right: 30px;
     color: #254805;
 }
 
@@ -1633,7 +1642,7 @@ footer {
     float: left;
     position: relative;
     top: 70px;
-    left: 20px;
+    left: 33px;
     }
 }
 
@@ -1652,6 +1661,7 @@ footer {
 
 #nulstilbtn2 {
     position: relative;
+    left: 15px;
     margin: 0;
     width: 125px;
     height: 30px;
@@ -1672,11 +1682,12 @@ footer {
     
 #filterbtn {
     margin-top: 100px;
+    margin-bottom: 15px;
     border: 1px solid #254805;
     color: #254805;
     width: 190px;
     height: 40px;
-    padding-bottom: 3px;
+    padding-bottom: 6px;
     background-color: #ffffff;
 }
 
@@ -1686,32 +1697,45 @@ footer {
     float: left;
 }
 
+#filterbtn h4{
+    margin: 4px auto;
+}
+
 #filterbtn3 {
     position: relative;
-    margin-left:5px;
-    border: 1px solid #333333;
-    color: #ffffff;
-    width:40%;
+    left: 20px;
+    margin-left: 5px;
+    width: 125px;
+    height: 26px;
+    padding-top: 7px;
+    line-height:20px;
+    font-size: 15px;
+    border: 3px solid #254805;
     background-color: #254805;
+    color: #ffffff;
+}
+
+@media screen and (min-width:601px) {
+    #filterbtn3{
+    left: 5px;
+    }
+}
+
+@media screen and (min-width:601px) {
+    #filterbtn3 h4{
+    margin: 0 auto;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width:601px) {
+    #filterbtn3 h4{
+    margin: 0 auto;
+        font-weight: bold;
+    }
 }
 
 #filterbtn3 a {
-    color: #ffffff;
-}
-
-#2filterbtn3 {
-    position: relative;
-    top: 10px;
-    left: 60px;
-    border: 1px solid #333333;
-    color: #ffffff;
-    width: 180px;
-    height: 40px;
-    padding-top: 3px;
-    background-color: #254805;
-}
-
-#2filterbtn3 a {
     color: #ffffff;
 }
 
@@ -1869,13 +1893,23 @@ footer {
 #gronneomradersection {
     background-color: #b3c179;
     width: 95.5%;
-    height: 680px;
+    height: 330px;
     position: absolute;
     left: 0;
 }
 
 .containerGroent {
     padding: 15px;
+    height: 650px;
+}
+
+.containerGroent p{
+    padding-left: 33%;
+    width: 60%;
+}
+    
+.containerGroent h1{
+    padding-right: 90px;
     height: 650px;
 }
 
@@ -1941,6 +1975,20 @@ footer {
         right: 10%;
         top: 230px;
         width: 20%;
+    }
+}
+    
+    .imgfacgroent {
+    width: 100%;
+}
+
+@media only screen and (min-width:601px) {
+    .imgfacgroent {
+        position: absolute;
+        left: 13%;
+        top: 60px;
+        width: 20%;
+        float: left;
     }
 }
 
