@@ -1874,7 +1874,7 @@ footer {
 
 @media only screen and (min-width:601px){
 .brodtekst{
-    width:50%;
+    width:48%;
     }
 }
 
@@ -1903,7 +1903,7 @@ footer {
     right:10%;
     width: 40%; 
     height: 285px;
-    top:24%;
+    top:30%;
 
     }
 }
@@ -1931,20 +1931,19 @@ footer {
 }
 
 @media only screen and (min-width:601px) {
-    .sammenhold{
-   width: 100%;
+.sammenhold{
+    width: 100%;
     position: absolute;
     right: 10%;
-        top:100%;
+    top:105%;
 }
 }
 
 @media screen and (min-width:601px) {
 .sammenhold{
-    position: absolute;
     float:right;
     width: 40%; 
-    margin-top: -200px;
+    margin-top: -150px;
     margin-left: 510px;
     margin-right: 0px;
 }    
