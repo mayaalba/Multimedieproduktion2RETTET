@@ -20,7 +20,7 @@
             <img src="images/search.png" class="searchikonnav" alt="søgeikon" onclick="on()">
             
             <div id="searchoverlay">
-                <nav class="topnav" id="myTopnav" onclick="">
+                <nav class="topnav" id="myTopnavOverlay" onclick="">
             <a href="index.html">
                 <img src="images/logo2.png" class="logo" alt="lundebylogo">
             </a>
@@ -28,11 +28,12 @@
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <img src="images/burgermenu-01.png" class="burgericon" alt="burgermenu">
             </a>
-            <a href="index.html" id="indholdnav" class="link">Forside</a>
+            <a href="index.html" id="indholdnavOverlay" class="link">Forside</a>
             <a href="omlunde.html" class="link">Om Lunde</a>
-            <a href="#" class="link">Faciliteter</a>
+            <a href="faciliteter.html" class="link">Faciliteter</a>
             <a href="boligoverblik.html" class="link">Boligoverblik</a>
-            <a href="nav.html" class="link" id="activenavnederst">Kalender</a>
+            <a href="nav.html" class="link" id="activenavnederstOverlay">Kalender</a>
+                    
             
         </nav>
                     
@@ -40,12 +41,12 @@
 
                     <ul id="searchUL">
                         <li><a href="boligoverblik.html">Ledige boliger</a></li>
-                        <li><a href="#faciliteter">Skole</a></li>
+                        <li><a href="faciliteter.html">Skole</a></li>
                         <li><a href="omlunde.html">Om Lunde</a></li>
                         <li><a href="nav.html">Kalender og begivenheder</a></li>
                         <li><a href="#footer">Kontakt</a></li>
-                        <li><a href="#faciliteter">Grønne områder</a></li>
-                        <li><a href="#faciliteter">Naboskab</a></li>
+                        <li><a href="faciliteter.html">Grønne områder</a></li>
+                        <li><a href="faciliteter.html">Naboskab</a></li>
                         <li><a href="https://www.facebook.com/Lunde.Varde/?__tn__=%2Cd%2CP-R&eid=ARCrOHW7Eux5xIRzVEm3B2k76dDJ5WW1duE8zG6sQu2re5ZB3KzNIndOpNkCyc51s8KRZ2D9pzYnklOp" target="_blank">Facebook</a></li>
                     </ul>
             </div>
@@ -54,7 +55,7 @@
             </a>
             <a href="index.html" id="indholdnav" class="link">Forside</a>
             <a href="omlunde.html" class="link">Om Lunde</a>
-            <a href="#" class="link">Faciliteter</a>
+            <a href="faciliteter.html" class="link">Faciliteter</a>
             <a href="boligoverblik.html" class="link">Boligoverblik</a>
             <a href="nav.html" class="link" id="activenavnederst">Kalender</a>
             
@@ -66,6 +67,13 @@
                 <p id="textboxkal">
                     I Lunde har vi mange arrangementer i løbet af et helt år. Her er det muligt at få et lille overblik i vores fælleskalender.
                     Det er også muligt at tilføje din egen begivenhed til kalenderen, hvis du mener resten af byen skal informeres om dette.
+                </p>
+                <p id="kaltextdesk">
+                    <b>Intimkoncerter på Kroen</b><br>
+                    På Kroen har vi mange hyggelige arrangementer. Vi har haft et par intimkoncerter med bl.a. Poul Krebs, som hver gang er en kæmpe succes! Derudover er det også her vi afholder vores borgermøder, hvor vi tit får en god snak om byen over en kop kaffe og kage.
+                    <br><br>
+                    <b>Børneaktiviteter</b><br>
+                    Vi har også hyggelige børneaktiviteter der oftest finder sted på skolens område. Vi har også gymnastikforeningen som arrangerer hyggelige events, hvor de ældre kan hygge sig sammen mens børnene leger sammen. Det er også på denne side, at man kan se hvornår der er fælles grillaftener på det grønne område.
                 </p>
             </div>
             <div id="calendar-container">
@@ -153,13 +161,19 @@
                 </ul>
             </div>
             <a href="#opretbegivenhed"><div class="addevent">+ Tilføj begivenhed</div></a>
+            
+            <div class="bjaelkekal">
+                <h1 id="bjaelkekalh1">
+                KOMMENDE BEGIVENHEDER
+                </h1>
+            </div>
         
             <div class="eventcont">
                 <div class="contimg-text">
                     <img src="images/img1.png" class="imgkal"  alt="billede">
                     <div class="textevent"><h2 class="h2kal">Koncert på kroen</h2></div>
                 </div>
-                <p class="pkal" id="pkaltop">Oplev et af Lundes lokale bands på Kroen d. 25. juni. Der vil være fest og glade dage!</p>
+                <p class="pkal" id="pkaltop">Oplev et af Lundes lokale bands på Kroen d. 25. juni klokken 20.</p>
                 <btn class="merebtn">Læs mere</btn>
             </div>
 
@@ -172,7 +186,6 @@
                 <p class="pkal">Tag på naturophold i Lundes grønne område, hvor de nye shelters giver ly.</p>
                 <btn class="merebtn">Læs mere</btn>
             </div>
-
             
             <div class="eventcont">
                 <div class="contimg-text">
