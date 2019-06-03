@@ -425,8 +425,19 @@ p {
     margin-bottom: 50px;
 }
 
+#activenavnederstOverlay {
+    color: #254805;
+    margin-bottom: 50px;
+}
+
 @media only screen and (min-width:601px) {
     #activenavnederst {
+        margin-bottom:0;
+    }
+}
+
+@media only screen and (min-width:601px) {
+    #activenavnederstOverlay {
         margin-bottom:0;
     }
 }
@@ -482,9 +493,9 @@ p {
 }
 
 .burgericon {
-    width:50px;
+    width:40px;
     float:right;
-    margin-top:8px;
+    margin-top:15px;
 }
 
 .searchikonnav {
@@ -496,9 +507,9 @@ p {
 
 @media screen and (min-width:601px) {
     .searchikonnav {
-        height:50px;
-        top:15%;
-        right:1%;
+        height:40px;
+        top:38%;
+        right:4%;
     }
 }
 
@@ -509,7 +520,7 @@ p {
     height:100%;
     bottom:0;
     background-color: #b3c179;
-    z-index: 1;
+    z-index: 5;
 }
 
 #indholdnav {
@@ -517,8 +528,20 @@ p {
     margin-left:0px;
 }
 
+#indholdnavOverlay {
+    margin-top:70px;
+    margin-left:0px;
+}
+
 @media screen and (min-width:601px) {
     #indholdnav {
+        margin-top:40px;
+        margin-left:15%;
+    }
+}
+
+@media screen and (min-width:601px) {
+    #indholdnavOverlay {
         margin-top:40px;
         margin-left:15%;
     }
@@ -552,7 +575,7 @@ footer {
 @media only screen and (min-width:601px) {
     footer {
         height:100px;
-        padding-top: 35px;
+        padding-top:35px;
     }
 }
 
@@ -675,8 +698,8 @@ footer {
 
 @media only screen and (min-width:601px) {
     .formkal {
-        margin-top:40%;
-        height:400px;
+        margin-top:85%;
+        height:440px;
     }
 }
 
@@ -689,20 +712,26 @@ footer {
 @media only screen and (min-width:601px) {
     .formkal1 input{
         width:90%;
+        margin:auto;
+        display: block;
     }
     
     .formkal2 input[type=text] {
         width:90%;
+        margin:auto;
+        display: block;
     }
     
     .formkal1 {
         width:50%;
         float:left;
+        text-align: center;
     }
     
     .formkal2 {
         width:50%;
         float:left;
+        text-align:center;
     }
     
     .formkal2 input[type=submit] {
@@ -750,13 +779,25 @@ footer {
 
 @media only screen and (min-width:601px) {
     .textboxkal {
-        width:40%;
+        width:48%;
+        float:left;
+        padding:10px;
+    }
+}
+
+#kaltextdesk {
+    display:none;
+}
+
+@media only screen and (min-width:601px) {
+    #kaltextdesk {
+        display:block;
     }
 }
 
 @media screen and (min-width:601px) {
     #h1kal {
-        margin-top:11%;
+        margin-top:12%;
     }
 }
 
@@ -772,9 +813,9 @@ footer {
 
 @media screen and (min-width:601px) {
     #calendar-container {
-        width:318px;
+        width:49.8%;
+        height:450px;
         float:right;
-        margin-right:0;
     }
 }
 
@@ -794,6 +835,12 @@ footer {
     font-size:20px;
     text-transform: uppercase;
     letter-spacing: 3px;
+}
+
+@media only screen and (min-width:601px) {
+    .month ul li {
+        font-size: 30px;
+    }
 }
 
 .month .foer {
@@ -820,6 +867,12 @@ footer {
     text-align:center;
 }
 
+@media only screen and (min-width:601px) {
+    .ugedage {
+        font-size: 20px;
+    }
+}
+
 .dage {
     padding: 10px 0;
     margin:0;
@@ -833,6 +886,14 @@ footer {
     text-align: center;
     margin-bottom: 5px;
     font-size:15px;
+}
+
+@media only screen and (min-width:601px) {
+    .dage li {
+        height:40px;
+        font-size: 20px;
+        line-height: 40px;
+    }
 }
 
 .aktivevent {
@@ -861,8 +922,9 @@ footer {
 
 @media screen and (min-width:601px) {
     .addevent {
-        margin-top:310px;
-        float:none;
+        margin-top: 5px;
+        width:98%;
+        float:left;
         text-align: right;
     }
 }
@@ -1013,6 +1075,31 @@ footer {
 .italic {
     margin-top:0;
     font-style: italic;
+}
+
+.bjaelkekal {
+    width:100%;
+    height: 100px;
+    background-color: #f3bf50;
+    float:left;
+    margin-bottom:2%;
+}
+
+#bjaelkekalh1 {
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 40px;
+    position:relative;
+    top:10px;
+}
+
+@media only screen and (min-width:601px) {
+    #bjaelkekalh1 {
+        font-size: 35px;
+        line-height: 105px;
+        position:static;
+    }
 }
 
 /*FORSIDE*/
@@ -1260,8 +1347,8 @@ footer {
     }
 }
 
-/* Kasser */
 
+/* Boligoverblik */
 .first {
          width: 100%;
          height: 330px;
@@ -1417,13 +1504,14 @@ footer {
     .first .eight {
          position: absolute;
          width: 50%;
-         height: 35px;
+         height: 30px;
          left: 50%;
-         top: 90%;
+         top: 91%;
          border-top: 1px solid #254805;
          border-left: 1px solid #254805;
          background-color: #254805;
          color: #ffffff;
+         cursor: pointer;
 }
 
 @media screen and (min-width:601px) {
@@ -1439,9 +1527,17 @@ footer {
          color: #ffffff;
     }
 }
+
+@media screen and (min-width:601px) {
+        .eight h4 {
+         margin: 5px auto;
+    }
+}
+    
     
 .h3bolig {
     margin: 1px;
+    margin-right: 30px;
     color: #254805;
 }
 
@@ -1669,7 +1765,7 @@ footer {
     float: left;
     position: relative;
     top: 70px;
-    left: 20px;
+    left: 33px;
     }
 }
 
@@ -1688,6 +1784,7 @@ footer {
 
 #nulstilbtn2 {
     position: relative;
+    left: 15px;
     margin: 0;
     width: 125px;
     height: 30px;
@@ -1708,11 +1805,12 @@ footer {
     
 #filterbtn {
     margin-top: 100px;
+    margin-bottom: 15px;
     border: 1px solid #254805;
     color: #254805;
     width: 190px;
     height: 40px;
-    padding-bottom: 3px;
+    padding-bottom: 6px;
     background-color: #ffffff;
 }
 
@@ -1722,32 +1820,45 @@ footer {
     float: left;
 }
 
+#filterbtn h4{
+    margin: 4px auto;
+}
+
 #filterbtn3 {
     position: relative;
-    margin-left:5px;
-    border: 1px solid #333333;
-    color: #ffffff;
-    width:40%;
+    left: 20px;
+    margin-left: 5px;
+    width: 125px;
+    height: 26px;
+    padding-top: 7px;
+    line-height:20px;
+    font-size: 15px;
+    border: 3px solid #254805;
     background-color: #254805;
+    color: #ffffff;
+}
+
+@media screen and (min-width:601px) {
+    #filterbtn3{
+    left: 5px;
+    }
+}
+
+@media screen and (min-width:601px) {
+    #filterbtn3 h4{
+    margin: 0 auto;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width:601px) {
+    #filterbtn3 h4{
+    margin: 0 auto;
+        font-weight: bold;
+    }
 }
 
 #filterbtn3 a {
-    color: #ffffff;
-}
-
-#2filterbtn3 {
-    position: relative;
-    top: 10px;
-    left: 60px;
-    border: 1px solid #333333;
-    color: #ffffff;
-    width: 180px;
-    height: 40px;
-    padding-top: 3px;
-    background-color: #254805;
-}
-
-#2filterbtn3 a {
     color: #ffffff;
 }
 
@@ -1755,6 +1866,16 @@ footer {
 
 .tekstboks{
         margin-top: 80px;
+}
+
+.tekstboks1{
+    margin-top: 50px;
+}
+
+@media only screen and (min-width:601px){
+.brodtekst{
+    width:50%;
+    }
 }
 
 .omlundeoverskrift{
@@ -1769,15 +1890,30 @@ footer {
 
 #videolunde {
     width:100%;
-    height:200px;;
+    height:190px;
 }
 
 @media only screen and (min-width:601px) {
-    #videolunde {
-        width:50%;
-        height:350px;
-        float:right;
-        margin-left: 10px;
+#videolunde {
+    position: absolute;
+    right:10%;
+    width: 40%; 
+    height: 285px;
+    top:24%;
+
+    }
+}
+
+#lundereklamefilm{
+    position: absolute;
+    float: left;
+    width: 55%;
+    padding: 5px;
+}
+
+@media only screen and (min-width:601px){
+#lundereklamefilm{
+        width: 20%;        
     }
 }
 
@@ -1787,14 +1923,25 @@ footer {
 
 .sammenhold{
    width: 100%;
+    position: static;
+}
+
+@media only screen and (min-width:601px) {
+    .sammenhold{
+   width: 100%;
+    position: absolute;
+    right: 10%;
+        top:110%;
+}
 }
 
 @media screen and (min-width:601px) {
 .sammenhold{
-    float:left;
-    width: 50%; 
-    margin-top: 10px;
-    margin-left: 0px;
+    position: absolute;
+    float:right;
+    width: 40%; 
+    margin-top: -200px;
+    margin-left: 510px;
     margin-right: 0px;
 }    
 }
@@ -1812,13 +1959,11 @@ footer {
 .tekstboks{
         margin-top: 110px;
 }
-    
-.tekstboks1{
-    margin-top: 50px;
-}
 
+
+@media screen and (min-width:601px) {
 .colorboks{
-    margin-top: 27%;;
+    margin-top: 40px;
     height: 400px;
     background-color: #b3c179;
 }
@@ -1829,7 +1974,7 @@ footer {
 }
 
 @media only screen and (min-width:601px) {
-    #omlundepbottom {
+#omlundepbottom {
         display:block;
         width:50%;
         float:left;
@@ -1876,11 +2021,11 @@ footer {
         height: 280px;
     }
 }
-
+    
 #gronneomradersection {
     background-color: #b3c179;
     width: 95.5%;
-    height: 680px;
+    height: 330px;
     position: absolute;
     left: 0;
 }
@@ -1890,10 +2035,20 @@ footer {
     height: 650px;
 }
 
+.containerGroent p{
+    float: left;
+    padding-left: 33%;
+    width: 59%;
+}
+    
+.containerGroent h1{
+    float: left;
+}
+
 #naboskabsection {
     width: 95.5%;
-    height: 68s0px;
-    margin-top: 720px;
+    height: 280px;
+    margin-top: 400px;
 }
 
 @media only screen and (min-width:601px) {
@@ -1909,7 +2064,7 @@ footer {
 }
 
 @media only screen and (min-width:601px) {
-    .h1fac {
+    #h1fac {
         position: absolute;
         float: left;
         font-size: 35px;
@@ -1921,7 +2076,8 @@ footer {
 
 @media only screen and (min-width:601px) {
     #h1facGroent {
-        float: right;
+        float: left;
+        padding-left: 33%;
     }
 }
 
@@ -1954,10 +2110,26 @@ footer {
         width: 20%;
     }
 }
-
-
-
-
-
     
+    .imgfacgroent {
+    width: 100%;
+}
 
+@media only screen and (min-width:601px) {
+    .imgfacgroent {
+        position: absolute;
+        left: 12%;
+        top: 55px;
+        width: 20%;
+        float: left;
+    }
+}
+    
+@media only screen and (min-width:601px) {
+.imgfacnaboskab {
+        position: absolute;
+        right: 10%;
+        top: 1300px;
+        width: 20%;
+    }
+}
