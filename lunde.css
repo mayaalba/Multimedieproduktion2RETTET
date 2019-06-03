@@ -6,6 +6,12 @@ body {
     line-height: 20px;
 }
 
+@media only screen and (min-width:601px) {
+    body {
+        line-height: 23px;
+    }
+}
+
 a {
     color: #333333;
     text-decoration: none;
@@ -194,6 +200,12 @@ p {
     text-align: left;
     font-size: 15px;
     margin-bottom: 0px;
+}
+
+@media only screen and (min-width:601px) {
+    p {
+        font-size: 18px;
+    }
 }
 
 .hvidp {
@@ -540,6 +552,7 @@ footer {
 @media only screen and (min-width:601px) {
     footer {
         height:100px;
+        padding-top: 35px;
     }
 }
 
@@ -1071,17 +1084,17 @@ footer {
     position: absolute;
     top: 166px;
     width: 100%;
-    height: 95px;
+    height: 105px;
     text-align: center;
     background-color: #f3bf50;
     opacity: 0.95;
 }
-    
+
 @media screen and (min-width:601px) {
     .textboxForside {
         top: 0px;
         width: 37%;
-        height: 99.5%;
+        height: 99.1%;
         text-align: center;
         background-color: #f3bf50;
         opacity: 0.95;
@@ -1102,7 +1115,7 @@ footer {
    .textForside {
         text-align: center;
         font-size: 25px;
-        margin-top: 20px;
+        margin-top: 30px;
         line-height: 35px;
     }
 }
@@ -1115,10 +1128,54 @@ footer {
 @media screen and (min-width:601px) {
    .h2Forside {
         font-size: 55px;
-        margin-top: 150px;
+        margin-top: 160px;
         line-height: 50px;
     }
 }
+
+.btnForside {
+    display: none;
+    
+}
+@media screen and (min-width:601px) {
+    .btnForside {
+        display: block;
+        position: absolute;
+        top: 78%;
+        left: 37%;
+    }
+}
+
+#merebtnForside1 {
+    background-color: #254805;
+    color: #FFFFFF;
+    border: 1.2px solid #254805;
+}
+
+#merebtnForside1:hover {
+    border: 1.2px solid #FFFFFF;
+}
+
+#merebtnForside2 {
+    background-color: #254805;
+    color: #FFFFFF;
+    border: 1.2px solid #254805;
+}
+
+#merebtnForside2:hover {
+    border: 1.2px solid #FFFFFF;
+}
+
+#merebtnForside3 {
+    background-color: #254805;
+    color: #FFFFFF;
+    border: 1.2px solid #254805;
+
+}
+#merebtnForside3:hover {
+    border: 1.2px solid #FFFFFF;
+}
+
 
 .prev, .next {
     cursor: pointer;
@@ -1132,7 +1189,7 @@ footer {
 
 @media screen and (min-width:601px) {
    .prev, .next {
-        bottom: 40%;
+        bottom: 38%;
         padding: 15px;
         font-size: 50px;
     }
@@ -1169,7 +1226,6 @@ footer {
     line-height: 34px;
     margin-left: 20px;
     margin-right: 20px;
-    color: #254805;
 }
 
 @media screen and (min-width:601px) {
@@ -1179,7 +1235,6 @@ footer {
     line-height: 50px;
     margin-left: 20px;
     margin-right: 20px;
-    color: #254805;
 }
 }
 
@@ -1782,32 +1837,127 @@ footer {
 }
 
 /*FACILITETER SIDE */
-#skolesection {
-    margin-top:90px;
+
+#h1facOverskrift {
+    margin-top:120px;
+    padding: 10px;
+    line-height: 10px;
 }
 
 @media only screen and (min-width:601px) {
-   #skolesection {
-    margin-top:110px;
-    } 
+    #h1facOverskrift {
+        margin-top:120px;
+        padding: 30px;
+    }
 }
+
 .facilitetersections {
-    height: 600px;
+    height: 650px;
     padding: 10px;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 @media only screen and (min-width:601px) {
     .facilitetersections {
-        padding:30px;
+        height: 300px;
+        padding: 30px;
         padding-top: 40px;
+    }
+}
+
+#skolesection {
+    width: 95.5%;
+    height: 650px;
+}
+
+@media only screen and (min-width:601px) {
+    #skolesection {
+        width: 65%;
+        height: 280px;
     }
 }
 
 #gronneomradersection {
     background-color: #b3c179;
+    width: 95.5%;
+    height: 680px;
+    position: absolute;
+    left: 0;
 }
 
-#gronneomraderfach1 {
-    text-align: right;
+.containerGroent {
+    padding: 15px;
+    height: 650px;
 }
+
+#naboskabsection {
+    width: 95.5%;
+    height: 68s0px;
+    margin-top: 720px;
+}
+
+@media only screen and (min-width:601px) {
+    #naboskabsection {
+    width: 65%;
+    }
+}
+
+.h1fac {
+    font-size: 25px;
+    color: #254805;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width:601px) {
+    .h1fac {
+        position: absolute;
+        float: left;
+        font-size: 35px;
+        line-height: 40px;
+        padding-bottom: 15px;
+        color: #254805;
+    }
+}
+
+@media only screen and (min-width:601px) {
+    #h1facGroent {
+        float: right;
+    }
+}
+
+.facText {
+    margin-bottom: 10px;
+    }
+
+@media only screen and (min-width:601px) {
+    #facText {
+        margin-top: 50px;
+        width: 10px;
+    }
+}
+
+@media only screen and (min-width:601px) {
+    #kontaktfaciliteter {
+        font-size: 15.5px;
+        }
+}
+
+.imgfacboern {
+    width: 100%;
+}
+
+@media only screen and (min-width:601px) {
+    .imgfacboern {
+        position: absolute;
+        right: 10%;
+        top: 230px;
+        width: 20%;
+    }
+}
+
+
+
+
+
+    
+
