@@ -685,11 +685,11 @@ footer {
 }
 
 .formkal {
-    margin-top:70px;
     background-color: #b3c179;
     padding:10px;
     color: #ffffff;
     padding-bottom:15px;
+    position: relative;
 }
 
 #opretbegivenhedstyle {
@@ -1497,7 +1497,7 @@ footer {
          width: 100%;
          height: 118px;
          left: 4%;
-         top: 24%;
+         top: 20%;
     }
 }
 
@@ -1545,8 +1545,8 @@ footer {
         .h3bolig {
         margin-left: 30%;
         color: #254805;
-        font-size: 25px;
-            padding-right: 1px;
+        font-size: 20px;
+        padding-right: 1px;
     }
 }    
     
@@ -1557,9 +1557,9 @@ footer {
 @media screen and (min-width:601px) {
         .pbolig {
         margin-left: 30%;
-        margin-top: 10px;
         color: #254805;
         width: 65%;
+            font-size: 16px;
     }
 }
 
@@ -1645,7 +1645,7 @@ footer {
 
 #filterboxfirst {
     margin-top: 40px;
-    height: 100px;
+    height: 119px;
 }
 
 #filterboxfirst2 {
@@ -1656,6 +1656,7 @@ footer {
 .filtercheck {
     margin-left: 10px;
     margin-bottom: 12px;
+    cursor: pointer;
 }
 
 #filterboxlast .h3filter {
@@ -1671,6 +1672,7 @@ footer {
     margin-left: 10px;
     margin-top: 2px;
     margin-bottom: 2px;
+    font-size: 14px;
 }
 
 #pmin2 {
@@ -1685,6 +1687,7 @@ footer {
     margin-right: 10px;
     margin-top: 2px;
     margin-bottom: 2px;
+    font-size: 16px;
 }
 
 #pmax2 {
@@ -1700,11 +1703,14 @@ footer {
 
 .pfilter {
     margin: 10px;
+    font-size:16px;
+    cursor: pointer;
 }
 
 .pvalue {
     margin: 5px;
     font-size: 14px;
+    font-size: 16px;
 }
 /* Slider */
 
@@ -1820,7 +1826,7 @@ footer {
     float: left;
 }
 
-#filterbtn h4{
+#filterfont-size: 14px;pfibtn h4{
     margin: 4px auto;
 }
 
@@ -1828,7 +1834,7 @@ footer {
     position: relative;
     left: 20px;
     margin-left: 5px;
-    width: 125px;
+    width: 97px;
     height: 26px;
     padding-top: 7px;
     line-height:20px;
@@ -1874,7 +1880,7 @@ footer {
 
 @media only screen and (min-width:601px){
 .brodtekst{
-    width:50%;
+    width:48%;
     }
 }
 
@@ -1903,7 +1909,7 @@ footer {
     right:10%;
     width: 40%; 
     height: 285px;
-    top:24%;
+    top:30%;
 
     }
 }
@@ -1921,43 +1927,30 @@ footer {
     }
 }
 
-#lundestimg {
-    width:30%;
-}
-
 .sammenhold{
    width: 100%;
     position: static;
 }
 
 @media only screen and (min-width:601px) {
-    .sammenhold{
-   width: 100%;
+.sammenhold{
+    width: 100%;
     position: absolute;
     right: 10%;
-        top:100%;
+    top:92%;
 }
 }
 
 @media screen and (min-width:601px) {
 .sammenhold{
-    position: absolute;
     float:right;
     width: 40%; 
-    margin-top: -200px;
+    margin-top: -150px;
     margin-left: 510px;
     margin-right: 0px;
 }    
 }
 
-.colorboks{
-    height: 160px;
-    background-color: #b3c179;
-}
-
-.lundesudvikling{
-    text-align: center;
-}
 
 @media screen and (min-width:601px) {
 .tekstboks{
@@ -1965,23 +1958,31 @@ footer {
 }
 }
 
-@media screen and (min-width:601px) {
-.colorboks{
-    margin-top: 40px;
-    height: 400px;
-    background-color: #b3c179;
-}
-
-.lundesudvikling{
-    text-align: center;
-}
-}
 
 @media only screen and (min-width:601px) {
 #omlundepbottom {
         display:block;
         width:50%;
         float:left;
+    }
+}
+
+
+#lundestimg {
+    width: 100%;
+}
+
+#lundesduvtext {
+    color: #254805;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@media only screen and (min-width:601px) {
+.lundesudvikling {
+    padding-top: 70px;
+    margin-bottom: 5px;
     }
 }
 

@@ -2,7 +2,7 @@
 function myFunction() {
   let x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
-    x.className += " responsive";
+    x.className += "responsive";
   } else {
     x.className = "topnav";
   }
@@ -61,7 +61,7 @@ btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// Når der trygges på span elementet (x), lukker modalen
+// Når der trykkes på span elementet (x), lukker modalen
 span.onclick = function() {
   modal.style.display = "none";
 }

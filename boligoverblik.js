@@ -57,8 +57,9 @@ window.onclick = function(event) {
 
 let slider = document.getElementById("myRange");
 let output = document.getElementById("demo");
+//output er resultatet af hvor prikken er
 output.innerHTML = slider.value;
-
+//Når du rykker på prik, sker der en funktion
 slider.oninput = function() {
   output.innerHTML = this.value;
 }
@@ -67,7 +68,7 @@ slider.oninput = function() {
 function myFunction() {
   let x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
-    x.className += " responsive";
+    x.className += "responsive";
   } else {
     x.className = "topnav";
   }
