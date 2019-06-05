@@ -813,7 +813,7 @@ footer {
 
 @media screen and (min-width:601px) {
     #calendar-container {
-        width:49.8%;
+        width:49%;
         height:450px;
         float:right;
     }
@@ -1909,7 +1909,7 @@ footer {
     right:10%;
     width: 40%; 
     height: 285px;
-    top:30%;
+    top:26%;
 
     }
 }
