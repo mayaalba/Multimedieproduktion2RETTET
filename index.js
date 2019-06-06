@@ -49,38 +49,70 @@ function slideshow() {
   //kan bruge i igen fordi let er brugt og ikke 'var' som er ud over blockscope
     let i;
     let x = document.getElementsByClassName("mySlides");
-  //definerer loop
+  //definerer loop 
+    /*initilizacing (gør klar til brug' ;  condition, så længe i er mindre end længden på x( my slides' vil loopet kører, ; i++ sker efter være iteration øger vi med 1 */ 
     for (i = 0; i < x.length; i++) {
-    //bruger loop på koden herunder
+    //bruger loop på koden herunder.
+        //x bruger i, som er lig med 0 (defineret i vores loop'. 
         x[i].style.display = "none";  
   }
+    
+    //my index +1
     myIndex++;
-  //hvis myIndex er længere end x, går den tilbage til 1
+  /*Så hvis længden på x( my slides ' er mindre end myIndex, går den tilbage til myindex som vi har sat til at være 1*/ 
     if (myIndex > x.length) {myIndex = 1};
+    /*og herefter siger vi så at den skal vis med style.display =block, hvor myindex -1. display block betyder at den viser vores index 1-1 når vores if statement er true. altså går den tilbage og viser vores først billede. 
+    '*/ 
     x[myIndex-1].style.display = "block";
-  setTimeout(slideshow, 5000); // Change image every 5 seconds
+    
+    
+    // Change image every 5 seconds
+  setTimeout(slideshow, 5000); 
 }
+
+
 //definerer ny variabel og giver den værdi 1
 let slideIndex = 1;
 showSlides(slideIndex);
 
 //Klik på pil til næste billede n måske 0
+//event i html - onclick 
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-//definerer Funktionen showslides, og giver den værdien n - bruges til at skift billede
+//  gør at når man bruger knapperne, så bliver man det slide og så starter timeren forfra fra det slide man er på. 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+/*definerer Funktionen showslides, og giver den værdien n - bruges til at skift billede*/
 function showSlides(n) {
-//kan bruge i igen fordi let er brugt og ikke 'var' som er ud over blockscope
+/*kan bruge i igen fordi let er brugt og ikke 'var'. let er block scoped og bruges i den funktion den skrives i.*/ 
   let i;
   let slides = document.getElementsByClassName("mySlides");  
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
+    
+/*Så hvis længden på slides( my slides ' er mindre end n, går den tilbage til slideindex som vi har sat til at være på billed 1*/ 
+  if (n > slides.length) {
+      slideIndex = 1}   
+    /*hvis n er større end 1 så går den tilbage, så må det betyde at vi går tilbage til forrige billede.*/ 
+  if (n < 1) {
+      slideIndex = slides.length}
+    
+    /*initilizacing (gør klar til brug' ;  condition, så længe i er mindre end længden på slides( my slides' vil loopet kører, ; i++ sker efter være iteration øger vi med 1 */ 
    for (i = 0; i < slides.length; i++) {
+       //bruger loop på koden herunder.
+        //slides bruger i, som er lig med 0 (defineret i vores loop'. 
       slides[i].style.display = "none";
   }
+    
+    /*og herefter siger vi så at den skal vis med style.display =block, hvor slideIndex -1. display block betyder at den viser vores index 1-1 når vores if statement er true. altså går den tilbage og viser vores først billede. 
+    '*/ 
   slides[slideIndex-1].style.display = "block";  
 }
+
+
+
 
 /* TOPNAV */
 function myFunction() {
